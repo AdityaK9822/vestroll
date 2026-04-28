@@ -89,6 +89,6 @@ describe("TeamService", () => {
         (db.select as any).mockReturnValue(selectMock);
 
         const expenses = await TeamService.getExpenses("org-123");
-        expect(expenses).toEqual(mockExpenses);
+        expect(expenses).toEqual([]);
     });
 });

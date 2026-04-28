@@ -9,6 +9,7 @@ import {
 } from "../db";
 import pc from "picocolors";
 import crypto from "crypto";
+import { generateSlug } from "../utils/slug";
 import { AuditLogService } from "./audit-log.service";
 import { OTP_EXPIRATION_MINUTES } from "./email-verification.service";
 import { UserService } from "./user.service";

@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { db } from "../db";
 import { employees } from "../db/schema";
 import { eq } from "drizzle-orm";

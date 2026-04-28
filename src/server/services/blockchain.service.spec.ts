@@ -51,6 +51,11 @@ vi.mock("../db", () => ({
   db: {
     insert: vi.fn().mockReturnThis(),
     values: vi.fn().mockResolvedValue({}),
+    select: vi.fn().mockReturnThis(),
+    from: vi.fn().mockReturnThis(),
+    where: vi.fn().mockReturnThis(),
+    limit: vi.fn().mockResolvedValue([]),
+    delete: vi.fn().mockReturnThis(),
   },
 }));
 

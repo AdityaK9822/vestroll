@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach, afterEach } from "vitest";
-import { invitationService } from "../invitation.service";
-import { db } from "../../db";
-import { organizationInvitations, users, organizations } from "../../db/schema";
+import { invitationService } from "./invitation.service";
+import { db } from "../db";
+import { organizationInvitations, users, organizations } from "../db/schema";
 import { eq } from "drizzle-orm";
 
 describe("InvitationService", () => {

@@ -194,7 +194,7 @@ class InvitationService {
     const { status, role, page = 1, limit = 20 } = options;
     const offset = (page - 1) * limit;
 
-    let whereConditions = [eq(organizationInvitations.organizationId, organizationId)];
+    const whereConditions = [eq(organizationInvitations.organizationId, organizationId)];
     
     if (status) {
       whereConditions.push(eq(organizationInvitations.status, status));
